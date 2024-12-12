@@ -56,18 +56,26 @@ img {
 
 .page-header {
         position: absolute;
+        top: 28px;
         background-color: transparent;
 }
 
+.logo-icon{
+        fill: black;
+}
 
-
+.header-logo{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+}
 
 
 /* MAIN SECTION  */
 
 .main-section {
         position: relative;
-        background-color: #576f35;;
+        /* background-color: #576f35; */
 }
 .main-title,
 .main-text{
