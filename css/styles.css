@@ -33,21 +33,11 @@ img {
 
 
 
-.container{
+.container {
+        min-width: 320px;
+        max-width: 375px;
         margin: 0 auto;
         padding: 0 20px;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-        .container {
-                width: 100%;
-        }
-}
-
-@media only screen and (min-width: 375px) {
-        .container {
-                max-width: 375px;
-        }
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,10 +54,12 @@ img {
         }
 }
 
+
 /* HEADER */
 
 .page-header {
         position: absolute;
+        width: 100%;
         top: 20px;
         background-color: transparent;
 }
@@ -107,7 +99,7 @@ img {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
         .header-logo{
                 width: 168px;
         }
@@ -123,8 +115,6 @@ img {
 }
 
 
-
-
 @media screen and (min-width: 768px) {
         .page-header{
                 top: 32px;
@@ -134,40 +124,65 @@ img {
 
 @media screen and (min-width: 1280px) {
         .header-wrapper {
-                display: block;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 498px;
         }
         .nav-list {
                 display: flex;
                 gap: 8px;
         }
-        
-        .nav-item {
-                border-radius: 12px;
-                padding: 12px;
-                /* width: 83px; */
-                min-height: 44px;
-        }
-        
         .nav-link {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 1.25;
                 text-align: center;
+                color: #fbfbfb;
                 border: 1px solid #fbfbfb;
+                border-radius: 12px;
+                padding: 12px;
+                height: 44px;
+                display: block;
         }
-
+        .nav-link:hover,
+        .nav-link:focus {
+                background-color: #d4bfc4;
+                color: #7a3145;
+        }
+        .nav-link:active {
+                background-color: #fbfbfb;
+                color: #7a3145;
+        }
         .order-button{
                 background-color: #7a3145;
+                border: none;
                 border-radius: 30px;
                 padding: 16px 32px;
-                width: 157px;
+                min-width: 157px;
                 min-height: 52px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.11;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fbfbfb;
         }
-
+        .order-button:hover,
+        .order-button:focus{
+                background-color: #d4bfc4;
+                color: #7a3145;
+        }
+        .order-button:active {
+                background-color: #fbfbfb;
+                color: #7a3145;
+        }
         .burger-button{
                 display: none;
         }
 }
+
 
 
 
