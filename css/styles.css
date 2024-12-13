@@ -70,7 +70,7 @@ img {
         justify-content: space-between;
 }
 
-.header-logo{
+.main-logo{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -100,10 +100,9 @@ img {
 
 
 @media screen and (max-width: 767px) {
-        .header-logo{
+        .main-logo{
                 width: 168px;
         }
-
         .logo-icon{
                 width: 16px;
                 height: 16px;
@@ -112,15 +111,17 @@ img {
                 width: 148px;
                 height: 12px;
         }
+        .burger-icon{
+                width: 32px;
+                height: 32px;
+        }
 }
-
 
 @media screen and (min-width: 768px) {
         .page-header{
                 top: 32px;
         }
 }
-
 
 @media screen and (min-width: 1280px) {
         .header-wrapper {
@@ -182,11 +183,3 @@ img {
                 display: none;
         }
 }
-
-
-
-
-
-
-/* MAIN SECTION  */
-
