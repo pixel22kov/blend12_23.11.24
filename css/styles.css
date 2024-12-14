@@ -1,6 +1,6 @@
 body {
         font-family: "Inter Tight", sans-serif;
-        background-color: #576f35;
+        /* background-color: #576f35; */
 }
 
 h1,
@@ -200,16 +200,25 @@ img {
 
 
 
+                
 
+.it-works-section {
 
-.it-works-section {}
+}
+.it-works-container{
+        
+}
+.it-works-img-box {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #7a3145;
+}
 
-
-
-.it-works-img-box {}
-
-.steps-main-wrapper {}
-
+.steps-main-wrapper {
+        background-color: #576f35;
+        padding-top: 80px;
+        padding-bottom: 80px
+}
 .steps-title {}
 
 .steps-title-part {}
@@ -221,3 +230,30 @@ img {
 .steps-item {}
 
 .steps-info-wrapper {}
+
+.fruits-pict{
+        border-radius: 30px;
+        width: 335px;
+        height: 452px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-pict {
+          width: 640px;
+          height: 640px;
+  } 
+}
+
+@media only screen and (min-width: 1280px) {
+        .fruits-pict {
+                width: 440px;
+                height: 560px;
+        }
+}
+
+
+
+
+
+
+
