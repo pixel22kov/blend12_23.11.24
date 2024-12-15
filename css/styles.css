@@ -201,6 +201,12 @@ img {
 .hero-section {
         position: relative;
         background-color: #576f35;
+        background-image: url(../images/hero-mob.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        min-height: 840px;
+        
 }
 
 .hero-content-wrapper{
@@ -227,6 +233,13 @@ img {
         width: 335px;
 }
 
+/* .hero-img-wrapper{
+        background-image: url(../images/hero-mob.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 350px;
+        
+} */
 
 @media only screen and (min-width: 768px) {
         .hero-content-wrapper {
