@@ -329,8 +329,8 @@ img {
         }
 
         .icon-close {
-                width: 20px;
-                height: 20px;
+                width: 40px;
+                height: 40px;
         }
 
         .menu-link {
@@ -344,7 +344,6 @@ img {
                 padding: 16px 32px;
         }
 }
-
 
 @media screen and (min-width: 1280px) {
         .mobile-tablet-menu {
@@ -494,17 +493,29 @@ img {
 }
 
 .advertisement-title{
-        max-width: 335px;
         font-weight: 600;
         font-size: 48px;
         line-height: 1.08;
         letter-spacing: -0.01em;
         text-transform: uppercase;
         color: #141414;
+        max-width: 335px;
+        position: relative;
 }
 
 .discount-part{
         color: #fbfbfb;
+        
+}
+
+.discount-part::before {
+        content: "Discount up to 40%!";
+        background-color: #576f35;
+        width: 335px;
+        height: 102px;
+        border-radius: 12px;
+        display: block;
+        position: absolute;
 }
 
 @media only screen and (min-width: 768px) {
@@ -516,14 +527,25 @@ img {
                 line-height: 1;
                 max-width: 704px;
         }
-        
+        .discount-part::before{
+                padding-top: 20px;
+                width: 675px;
+                height: 86px;
+                top: -20px;
+        }
 }
 
 @media only screen and (min-width: 1280px) {
         .advertisement-title {
                 font-size: 76px;
-                line-height: 1;
-                max-width: 1080px;
+                max-width: 1054px;
         }
-        
+        .discount-part::before {
+                width: 808px;
+                height: 84px;
+                padding-left: 14px;
+                padding-top: 4px;
+                top: -4px;
+                left: -16px;
+        }
 } 
