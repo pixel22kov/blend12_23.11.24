@@ -492,7 +492,7 @@ img {
         padding: 80px 0;
 }
 
-.advertisement-title{
+.advertisement-text{
         font-weight: 600;
         font-size: 48px;
         line-height: 1.08;
@@ -522,7 +522,7 @@ img {
         .advertisement-section {
                 padding: 100px 0;
         }
-        .advertisement-title {
+        .advertisement-text {
                 font-size: 64px;
                 line-height: 1;
                 max-width: 704px;
@@ -536,7 +536,7 @@ img {
 }
 
 @media only screen and (min-width: 1280px) {
-        .advertisement-title {
+        .advertisement-text {
                 font-size: 76px;
                 max-width: 1054px;
         }
@@ -681,12 +681,10 @@ img {
 }
 
 .social-wrapper {
+        margin: 0 auto;
         border-radius: 30px;
         padding: 40px 20px;
         background-color: #7a3145;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 }
 
 .social-img {
@@ -744,7 +742,6 @@ img {
         .callback-text {
                 font-size: 16px;
                 line-height: 1.25;
-                max-width: 640px;
         }
 
         .form-wrapper{
@@ -752,6 +749,8 @@ img {
                 margin-bottom: 32px;
                 max-width: 640px;
         }
+
+        
 
         .form-description {
                 font-size: 32px;
@@ -775,60 +774,49 @@ img {
 
         .social-wrapper {
                 max-width: 640px;
-        }
-}
-
-
-
-
-        
-               
-                
-
-
-
-        .social-wrapper {
                 padding: 52px;
-                max-width: 100%;
-                height: auto;
         }
-
         .social-img {
-                max-width: 100%;
+                width: 536px;
+                height: 316px;
                 margin-bottom: 52px;
         }
-
         .social-text {
                 font-size: 16px;
                 line-height: 1.25;
         }
-
         .social-list {
                 flex-wrap: nowrap;
                 gap: 12px;
         }
-
         .social-item:not(:last-child)::after {
-                content: " /";
                 margin-left: 12px;
         }
-
-
-/* Desktop style */
+}
 
 @media only screen and (min-width: 1280px) {
-
-        .callback-title {
-                max-width: 751px;
+        .callback-wrappper {
+                width: 751px;
         }
-
-        .callback-text {
-                max-width: 742px;
-        }
-
         .form-wrapper {
                 padding: 52px 48px;
+                margin-bottom: 0;
+                max-width: 524px;
         }
+}
+
+.form-description {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #141414;
+        margin-bottom: 40px;
+}
+
+
+/* @media only screen and (min-width: 1280px) {
 
         .contact-form {
                 gap: 16px;
@@ -869,4 +857,4 @@ img {
                 display: inline;
                 white-space: nowrap;
         }
-}
+} */
