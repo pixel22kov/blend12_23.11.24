@@ -421,11 +421,12 @@ img {
 @media only screen and (min-width: 1280px) {
         .hero-container{
                 display: flex;
-                /* max-width: 1280px; */
-                /* margin: 0 auto; */
+                /* max-width: 1280px;
+                margin: 0 auto; */
         } 
         .hero-content-wrapper {
                 padding-top: 232px;
+                padding-right: 36px;
                 width: 50%;
         }
         .hero-title {
@@ -722,11 +723,6 @@ img {
         padding: 20px 16px;
 }
 
-.reviews-item:nth-child(2),
-.reviews-item:nth-child(3) {
-        display: none;
-}
-
 .reviews-item-img{
         margin: 0 auto;
         margin-bottom: 24px;
@@ -752,6 +748,12 @@ img {
         max-width: 288px;
 }
 
+@media only screen and (max-width: 767px) {
+        .reviews-item:nth-child(2) {
+                display: none;
+        }
+}
+
 @media only screen and (min-width: 768px) {
         .reviews-section {
                 padding: 100px 0;
@@ -764,7 +766,7 @@ img {
                 margin-bottom: 24px;
         }
 
-        .reviews-title-content {
+        .reviews-title-text {
                 font-size: 16px;
                 line-height: 1.25;
                 max-width: 553px;
@@ -773,20 +775,12 @@ img {
 
         .reviews-list {
                 display: flex;
-                flex-wrap: wrap;
                 gap: 24px;
         }
 
-        .reviews-item,
-        .reviews-item.tablet {
+        .reviews-item {
                 padding: 20px;
-                display: flex;
-                width: calc((100% - 24px) / 2);
-        }
-
-        .reviews-item.desktop {
-                display: none;
-        }
+         }
 
         .reviews-item-content {
                 font-size: 16px;
@@ -794,16 +788,11 @@ img {
         }
 }
 
-@media only screen and (min-width: 1280px) {
-
-        .reviews-item,
-        .reviews-item.tablet,
-        .reviews-item.desktop {
-                display: flex;
-                width: calc((100% - 48px) / 3);
+@media only screen and (max-width: 1279px) {
+        .reviews-item:nth-child(3) {
+                display: none;
         }
 }
-
 
 
 /* callback styles */
