@@ -382,13 +382,13 @@ img {
 }
 
 .hero-img-wrapper{
-        background-image: url(../images/hero-mob.jpg);
+        background-image: url(../images/hero/hero-mob.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 372px;
         /* max-width: 375px; */
-        /* margin: 0 auto; */
+        margin: 0 auto;
 }
 
 @media only screen and (max-width: 374px) {
@@ -412,7 +412,7 @@ img {
                 max-width: 603px;
         }
         .hero-img-wrapper{
-                background-image: url(../images/imagetab1x.jpg);
+                background-image: url(../images/hero/imagetab1x.jpg);
                 height: 536px;
                 /* max-width: 768px; */
         }
@@ -436,7 +436,7 @@ img {
                 width: 450px;
         }
         .hero-img-wrapper{
-                background-image: url(../images/imagedesk1x.jpg);
+                background-image: url(../images/hero/imagedesk1x.jpg);
                 height: 796px;
                 width: 50%;
         }
