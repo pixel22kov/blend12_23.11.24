@@ -519,14 +519,13 @@ img {
 }
 
 .discount-part{
-        color: #fbfbfb;
-        
+        color: #fbfbfb;  
 }
 
 .discount-part::before {
         content: "Discount up to 40%!";
         background-color: #576f35;
-        width: 335px;
+        max-width: 335px;
         height: 102px;
         border-radius: 12px;
         display: block;
@@ -544,7 +543,7 @@ img {
         }
         .discount-part::before{
                 padding-top: 20px;
-                width: 675px;
+                max-width: 675px;
                 height: 86px;
                 top: -20px;
         }
@@ -556,7 +555,7 @@ img {
                 max-width: 1054px;
         }
         .discount-part::before {
-                width: 808px;
+                max-width: 808px;
                 height: 84px;
                 padding-left: 14px;
                 padding-top: 4px;
