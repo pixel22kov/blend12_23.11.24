@@ -56,10 +56,10 @@
 
       <!-- MODAL is-open -->
       <div class="mobile-tablet-menu" data-menu>
-        <div class="container mobile-menu-container">
+        <div class="mobile-menu-container">
           <button class="menu-close-button" type="button" data-menu-close>
             <svg class="icon-close" width="32" height="32">
-              <use href="./img/icons.svg#icon-close"></use>
+              <use href="./img/icons.svg#icon-cancel"></use>
             </svg>
           </button>
           <ul class="menu-list">
@@ -80,7 +80,7 @@
 
     <main>
       <section class="hero-section">
-        <div class="hero-container">
+        <!-- <div class="hero-container"> -->
           <div class="container hero-content-wrapper">
             <h1 class="hero-title">organic vegetables to your diet today!</h1>
             <p class="hero-text">
@@ -91,83 +91,81 @@
             </p>
           </div>
           <div class="hero-img-wrapper"></div>
-        </div>
+        <!-- </div> -->
       </section>
 
-      <section class="it-works-section" id="how-it-works">
-        <div class="it-works-img-box">
-          <div class="container">
-            <h2 class="visually-hidden">How it works</h2>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/fruits/fruits_dek@1x.jpg 1x,
-                  ./images/fruits/fruits_dek@1x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./images/fruits/fruits_tab@1x.jpg 1x,
-                  ./images/fruits/fruits_tab@1x.jpg 2x
-                "
-              />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/fruits/fruits_mob@1x.jpg 1x,
-                  ./images/fruits/fruits_mob@1x.jpg 2x
-                "
-              />
-              <img
-                src="./images/fruits/fruits_dek@1x.jpg"
-                alt="fruits-slicing"
-                class="fruits-pict"
-                width="440"
-                height="560"
-              />
-            </picture>
-          </div>
-        </div>
-        <div class="steps-main-wrapper">
-          <div class="container">
-            <h2 class="steps-title">
-              To order your<span class="steps-title-part">vegetable</span>
-              basket, simply follow these easy
-              <span class="steps-title-part">steps</span>
-            </h2>
-            <p class="steps-text">
-              Our baskets are assembled with care and delivered straight to your
-              doorstep, so you can enjoy the taste of fresh fruit without ever
-              leaving your home.
-            </p>
-            <ol class="steps-list">
-              <li class="steps-item">
-                <div class="steps-info-wrapper">
-                  <p>
-                    Just choose the vegetable you want to order by clicking on
-                    the checkboxes next to it.
-                  </p>
-                </div>
-              </li>
-              <li class="steps-item">
-                <div class="steps-info-wrapper">
-                  <p>Click on the basket and fill out the form.</p>
-                </div>
-              </li>
-              <li class="steps-item">
-                <div class="steps-info-wrapper">
-                  <p>
-                    Sit back and relax! Your fresh vegetables basket will be
-                    delivered.
-                  </p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
+      <section class="section section-how" id="how-it-works">
+  <h2 class="visually-hidden">How it works</h2>
+  <div class="works-img">
+    <div class="container img-container">
+      <picture>
+        <source
+          srcset="
+            img/how-it-works/image-how-desk@2x.jpg 2x,
+            img/how-it-works/image-how-desk@1x.jpg 1x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            img/how-it-works/image-how-tab@2x.jpg 2x,
+            img/how-it-works/image-how-tab@1x.jpg 1x
+          "
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+        <source
+          srcset="
+            img/how-it-works/image-how-mob@2x.jpg 2x,
+            img/how-it-works/image-how-mob@1x.jpg 1x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="img/how-it-works/image-how-mob@1x.jpg"
+          alt="women"
+          width="440"
+          height="560"
+        />
+      </picture>
+    </div>
+  </div>
+
+  <div class="works-content">
+    <h3 class="order">
+      To order your <span class="part-order">vegetable</span> basket, simply
+      follow these <span class="part-order">easy steps</span>
+    </h3>
+    <p class="bascket">
+      Our baskets are assembled with care and delivered straight to your
+      doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+      your home.
+    </p>
+
+    <ol class="ol-list">
+      <li>
+        <p>
+          Just choose the <span class="part-li">vegetable</span> you want to
+          order by clicking on the checkboxes
+          <span class="part-li">next to it</span>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Click on the <span class="part-li">basket</span> and fill out the
+          form.
+        </p>
+      </li>
+      <li>
+        <p>
+          Sit back and relax! Your
+          <span class="part-li">fresh vegetables</span> basket will be
+          delivered.
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
 
       <section class="advertisement-section">
         <div class="container">
