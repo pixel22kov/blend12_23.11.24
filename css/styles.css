@@ -648,21 +648,26 @@ img {
         text-transform: uppercase;
         color: #141414;
         max-width: 335px;
-        position: relative;
 }
 
 .discount-part{
+        position: relative;
+        display: inline-block;
         color: #fbfbfb;  
+        z-index: 1;
+        max-width: 335px;
 }
 
 .discount-part::before {
-        content: "Discount up to 40%!";
-        background-color: #576f35;
-        max-width: 335px;
-        height: 102px;
-        border-radius: 12px;
-        display: block;
+        content: "";
         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #576f35;
+        border-radius: 12px;
+        z-index: -1;
+        height: 102px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -674,9 +679,11 @@ img {
                 line-height: 1;
                 max-width: 704px;
         }
-        .discount-part::before{
-                padding-top: 20px;
+
+        .discount-part{
                 max-width: 675px;
+        }
+        .discount-part::before{
                 height: 86px;
                 top: -20px;
         }
@@ -687,15 +694,19 @@ img {
                 font-size: 76px;
                 max-width: 1054px;
         }
-        .discount-part::before {
+
+        .discount-part{
                 max-width: 808px;
+        }
+        
+        .discount-part::before {
                 height: 84px;
-                padding-left: 14px;
-                padding-top: 4px;
+                right: -6px;
                 top: -4px;
                 left: -16px;
         }
 } 
+
 
 /* VEGETABLES STYLES */
 
