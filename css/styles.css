@@ -473,6 +473,11 @@ button{
         background-color: #576f35;
 }
 
+.works-content-box{
+        max-width: 335px;
+        margin: 0 auto;
+} 
+
 .order-title {
         font-weight: 600;
         font-size: 28px;
@@ -542,6 +547,12 @@ button{
         color: #858585;
 }
 
+@media only screen and (max-width: 767px) {
+        .second-text {
+                width: 176px;
+        }
+}
+
 @media only screen and (min-width: 768px) {
         .works-img-wrapper {
                 padding: 100px 64px;
@@ -553,6 +564,10 @@ button{
         .works-content-wrapper {
                 padding: 100px 164px;
         }
+        .works-content-box {
+                max-width: 440px;
+        }
+
         .order-title {
                 font-size: 32px;
                 margin-bottom: 24px;
@@ -572,8 +587,13 @@ button{
 }
 
 @media only screen and (min-width: 1280px) {
+        .section-how{
+                background: linear-gradient(to right, #7A3145 50%, #576f35 50%);
+        }
         .works-main-container{
                 display: flex;
+                max-width: 1280px;
+                margin: 0 auto;
         } 
         .works-img-wrapper{
                 padding: 100px;
@@ -587,6 +607,7 @@ button{
                 padding: 100px;
                 width: 50%;
         }
+                
         .order-text{
                 margin-bottom: 104px;
         }
